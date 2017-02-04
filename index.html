@@ -3,27 +3,48 @@
     <meta content="text/html; charset=windows-1252" http-equiv="content-type">
     <title>Herb's Internet Magicks</title>
     <style type="text/css">
-@font-face {
-    font-family: "CaviarDreams";
-    src: url(assets/ttf/CaviarDreams.ttf) format("truetype");
-}
-h1.cdtitle {
-  font-family: "CaviarDreams", Courier;
-  font-size: 150%;
-  font-weight: normal;
-}
-p.cdbody { 
-    font-family: "CaviarDreams", Courier;
-}
-#raincanvas {
-  position: relative;
-}
-#raincanvas canvas, #overlay {
-  position: absolute;
-}
-</style>
+      @font-face {
+        font-family: "CaviarDreams";
+        src: url(./assets/ttf/CaviarDreams.ttf) format("truetype");
+      }
+      @keyframes fadein
+      {
+        from { opacity: 0.0; }
+        to { opacity: 1.0; }
+      }
+      h1.cdtitle {
+        font-family: "CaviarDreams", Courier;
+        font-size: 150%;
+        font-weight: normal;
+        color: #FFFFFF;
+        animation-name: fadein;
+        animation-duration: 5s;
+
+      }
+      p.cdbody { 
+        font-family: "CaviarDreams", Courier;
+        color: #FFFFFF;
+        opacity: 0.0;
+        animation-name: fadein;
+        animation-duration: 4s;
+        animation-delay: 1.5s;
+        animation-fill-mode: forwards;
+      }
+      hr {
+        opacity: 0.0;
+        animation-name: fadein;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+      }
+      #raincanvas {
+        position: relative;
+      }
+      #raincanvas canvas, #overlay {
+        position: absolute;
+      }
+    </style>
   </head>
-  <body>
+  <body bgcolor=#889FA9>
     <div id="raincanvas">
       <canvas id="rain"></canvas>
       <script src="./assets/js/rain.js"></script>
@@ -31,11 +52,12 @@ p.cdbody {
     <div>
       <center>
         <h1 class="cdtitle">Welcome Home.</h1>
-        <hr style='margin-top:-10'>
+        <hr style='margin-top:-10; animation-delay: 1.5s'>
         <p class="cdbody">
           It almost seems as though you've reached a dead end.
         </p>
       </center>
+      <div style='position:fixed; bottom:0'><p class="cdbody">rain.js by velddev</div>
     </div>
   </body>
 </html>
