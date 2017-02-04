@@ -14,7 +14,7 @@
       }
       h1.cdtitle {
         font-family: "CaviarDreams", Courier;
-        font-size: 150%;
+        font-size: 7vw;
         font-weight: normal;
         color: #FFFFFF;
         animation-name: fadein;
@@ -23,6 +23,17 @@
       }
       p.cdbody { 
         font-family: "CaviarDreams", Courier;
+        font-size: 2vw;
+        color: #FFFFFF;
+        opacity: 0.0;
+        animation-name: fadein;
+        animation-duration: 4s;
+        animation-delay: 1.5s;
+        animation-fill-mode: forwards;
+      }
+      p.cdfooter { 
+        font-family: "CaviarDreams", Courier;
+        font-size: 1vw;
         color: #FFFFFF;
         opacity: 0.0;
         animation-name: fadein;
@@ -52,12 +63,12 @@
     <div>
       <center>
         <h1 class="cdtitle">Welcome Home.</h1>
-        <hr style='margin-top:-10; animation-delay: 1.5s'>
+        <hr style='margin-top:-8vh; animation-delay: 1.5s'>
         <p class="cdbody">
           It almost seems as though you've reached a dead end.
         </p>
       </center>
-      <div style='position:fixed; bottom:0'><p class="cdbody">rain.js by velddev</div>
+      <div style='position:fixed; bottom:0'><p class="cdfooter">rain.js by velddev</div>
     </div>
   </body>
 </html>
