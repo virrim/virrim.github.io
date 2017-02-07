@@ -1,17 +1,9 @@
 <html>
   <head>
     <meta content="text/html; charset=windows-1252" http-equiv="content-type">
-    <title>Herb's Internet Magicks</title>
+    <link rel="stylesheet" href="global.css" type="text/css" />
+    <title>Herb in HTML Form</title>
     <style type="text/css">
-      @font-face {
-        font-family: "CaviarDreams";
-        src: url(./assets/ttf/CaviarDreams.ttf) format("truetype");
-      }
-      @keyframes fadein
-      {
-        from { opacity: 0.0; }
-        to { opacity: 1.0; }
-      }
       h1.cdtitle {
         font-family: "CaviarDreams", Courier;
         font-size: 700%;
@@ -48,10 +40,16 @@
         animation-fill-mode: forwards;
       }
       #raincanvas {
-        position: relative;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0px;
       }
       #raincanvas canvas, #overlay {
         position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0px;
       }
     </style>
   </head>
@@ -68,7 +66,28 @@
           It almost seems as though you've reached a dead end.
         </p>
       </center>
-      <div style='position:fixed; bottom:0'><p class="cdfooter">rain.js by velddev</div>
+      <div style='position:fixed; bottom:0'>
+        <p class="cdfooter">rain.js by velddev</p>
+      </div>
+    </div>
+    <div align="left" style="
+                            opacity: 0.0;
+                            border-right: 1px solid white;
+                            width: 15%;
+                            height: 80%;
+                            position: absolute;
+                            top: 20%;
+                            animation-name: fadein;
+                            animation-duration: 4s;
+                            animation-delay: 1.5s;
+                            animation-fill-mode: forwards;">
+      <table border="0" cellspacing="0" >
+        <tr><a href="./anime/"><p class="cdbody">Anime Reviews</p></a></tr>
+        <tr><a href="./wizard/stories/"><p class="cdbody">Wizard Stories</p></a></tr>
+        <tr><a href="./music/"><p class="cdbody">Bass Mumbles</p></a></tr>
+        <tr><a href="./vlog/"><p class="cdbody">Musings</p></a></tr>
+        <tr><a href="./podcast/"><p class="cdbody">Yakkity Cast</p></a></tr>
+      </table>
     </div>
   </body>
 </html>

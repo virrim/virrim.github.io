@@ -1,0 +1,56 @@
+@font-face {
+	font-family: "CaviarDreams";
+	src: url(./assets/ttf/CaviarDreams.ttf) format("truetype");
+}
+@keyframes fadein {
+	from { opacity: 0.0; }
+	to { opacity: 1.0; }
+}
+
+a:link { color: #FFFFFF; text-decoration: none; }
+a:visited { color: #FFFFFF; text-decoration: none; }
+a:hover { color: #FFFFFF; font-weight: bold; }
+a:active { color: #FFFFFF; text-decoration: none; }
+
+
+h1.cdtitle {
+	font-family: "CaviarDreams", Courier;
+	font-size: 700%;
+	font-weight: normal;
+	color: #FFFFFF;
+	animation-name: slideright;
+	animation-duration: 3s;
+}
+p.cdbody { 
+	font-family: "CaviarDreams", Courier;
+	font-size: 200%;
+	color: #FFFFFF;
+	opacity: 0.0;
+	animation-name: fadein;
+	animation-duration: 2s;
+	animation-delay: .5s;
+	animation-fill-mode: forwards;
+}
+p.cdfooter { 
+	font-family: "CaviarDreams", Courier;
+	font-size: 1vw;
+	color: #FFFFFF;
+	opacity: 0.0;
+	animation-name: fadein;
+	animation-duration: 2s;
+	animation-delay: .5s;
+	animation-fill-mode: forwards;
+}
+hr {
+	opacity: 0.0;
+	animation-name: fadein;
+	animation-duration: 1s;
+	animation-delay: .5s;
+	animation-fill-mode: forwards;
+}
+#raincanvas {
+	position: relative;
+}
+#raincanvas canvas, #overlay {
+	position: absolute;
+}
