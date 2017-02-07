@@ -25,7 +25,7 @@
       }
       p.cdfooter { 
         font-family: "CaviarDreams", Courier;
-        font-size: 1vw;
+        font-size: 100%;
         color: #FFFFFF;
         opacity: 0.0;
         animation-name: fadein;
@@ -41,7 +41,7 @@
       }
       #raincanvas {
         position: absolute;
-        width: 100%;
+        width: 99%;
         height: 100%;
         top: 0px;
       }
@@ -58,7 +58,7 @@
       <canvas id="rain"></canvas>
       <script src="./assets/js/rain.js"></script>
     </div>
-    <div>
+    <div style="width: 100%">
       <center>
         <h1 class="cdtitle" style='display: inline'>Welcome Home.</h1>
         <hr style='margin: 0px; animation-delay: 1.5s'>
@@ -66,28 +66,28 @@
           It almost seems as though you've reached a dead end.
         </p>
       </center>
-      <div style='position:fixed; bottom:0'>
+      <div style='position:fixed; bottom: 0; width: 100%'>
         <p class="cdfooter">rain.js by velddev</p>
       </div>
     </div>
-    <div align="left" style="
+      <frame><div align="left" style="
                             opacity: 0.0;
                             border-right: 1px solid white;
                             width: 15%;
-                            height: 80%;
+                            
                             position: absolute;
-                            top: 20%;
                             animation-name: fadein;
                             animation-duration: 4s;
                             animation-delay: 1.5s;
                             animation-fill-mode: forwards;">
-      <table border="0" cellspacing="0" >
-        <tr><a href="./anime/"><p class="cdbody">Anime Reviews</p></a></tr>
-        <tr><a href="./wizard/stories/"><p class="cdbody">Wizard Stories</p></a></tr>
-        <tr><a href="./music/"><p class="cdbody">Bass Mumbles</p></a></tr>
-        <tr><a href="./vlog/"><p class="cdbody">Musings</p></a></tr>
-        <tr><a href="./podcast/"><p class="cdbody">Yakkity Cast</p></a></tr>
-      </table>
-    </div>
+        <table border="0" cellspacing="0" >
+          <tr><a href="./anime/"><p class="cdbody">Anime Reviews</p></a></tr>
+          <tr><a href="./wizard/stories/"><p class="cdbody">Wizard Stories</p></a></tr>
+          <tr><a href="./music/"><p class="cdbody">Bass Mumbles</p></a></tr>
+          <tr><a href="./vlog/"><p class="cdbody">Musings</p></a></tr>
+          <tr><a href="./podcast/"><p class="cdbody">Yakkity Cast</p></a></tr>
+        </table>
+      </div>
+    </frame>>
   </body>
 </html>
