@@ -2,6 +2,10 @@
 	font-family: "CaviarDreams";
 	src: url(./assets/ttf/CaviarDreams.ttf) format("truetype");
 }
+@font-face {
+	font-family: "CaviarDreamsBold";
+	src: url(./assets/ttf/CaviarDreams_Bold.ttf) format("truetype");
+}
 @keyframes fadein {
 	from { opacity: 0.0; }
 	to { opacity: 1.0; }
@@ -26,7 +30,7 @@ p.cdbody {
 	font-size: 200%;
 	color: #FFFFFF;
 	opacity: 0.0;
-	animation-name: fadein;
+	animation-name: fadein;	<hr style="margin: 0;">
 	animation-duration: 2s;
 	animation-delay: .5s;
 	animation-fill-mode: forwards;
@@ -40,6 +44,34 @@ p.cdfooter {
 	animation-duration: 2s;
 	animation-delay: .5s;
 	animation-fill-mode: forwards;
+}
+p { 
+	font-family: "CaviarDreams", Courier;
+	font-size: 100%;
+	color: #FFFFFF;
+	opacity: 0.0;
+	animation-name: fadein;	<hr style="margin: 0;">
+	animation-duration: 2s;
+	animation-delay: .5s;
+	animation-fill-mode: forwards;
+}
+h1 {
+	font-family: "CaviarDreamsBold", Courier;
+	font-size: 200%;
+	font-weight: normal;
+	color: #FFFFFF;
+	animation-name: fadein;
+	animation-duration: 3s;
+	margin: 0;
+}
+h2 {
+	font-family: "CaviarDreams", Courier;
+	font-size: 100%;
+	font-weight: normal;
+	color: #EAEAEA;
+	animation-name: fadein;
+	animation-duration: 3s;
+	margin: 0;
 }
 hr {
 	opacity: 0.0;
