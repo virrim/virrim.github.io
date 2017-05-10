@@ -80,6 +80,12 @@ hr {
 	animation-delay: .5s;
 	animation-fill-mode: forwards;
 }
+
+td.pagetitlesback {
+	text-align: right;
+	vertical-align: top;
+}
+
 #raincanvas {
 	position: relative;
 }
