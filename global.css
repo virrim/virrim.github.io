@@ -86,9 +86,15 @@ td.pagetitlesback {
 	vertical-align: top;
 }
 
-#raincanvas {
-	position: relative;
-}
-#raincanvas canvas, #overlay {
-	position: absolute;
-}
+      #raincanvas {
+        position: absolute;
+        width: 99%;
+        height: 100%;
+        top: 0px;
+      }
+      #raincanvas canvas, #overlay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0px;
+      }
